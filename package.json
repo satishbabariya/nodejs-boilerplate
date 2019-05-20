@@ -8,7 +8,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "nodemon",
+    "test": "jest"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -23,6 +25,7 @@
     "helmet": "^3.18.0",
     "inversify": "^5.0.1",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.5",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.17"
   },
