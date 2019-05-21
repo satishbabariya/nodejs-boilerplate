@@ -8,8 +8,8 @@ import routes from '../routes';
 export default (app: express.Application) => {
   app.enable('trust proxy');
   app.use(cors());
-  app.use(bodyParser());
   app.use(helmet());
+  app.use(bodyParser.json());
 
   app.use('/api', routes);
 

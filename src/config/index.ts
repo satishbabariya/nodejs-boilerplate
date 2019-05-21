@@ -30,7 +30,7 @@ export default {
     /**
      * Database host port.
      */
-    port: process.env.TYPEORM_PORT,
+    port: Number.parseInt(process.env.TYPEORM_PORT),
     /**
      * Database username.
      */

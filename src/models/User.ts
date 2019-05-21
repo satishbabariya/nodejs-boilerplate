@@ -1,4 +1,13 @@
-import { Entity, ObjectIdColumn, ObjectID, Column } from 'typeorm';
+import {
+  Entity,
+  ObjectIdColumn,
+  ObjectID,
+  Column,
+  Index,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
+import { lowercase } from './ValueTransformers';
 
 @Entity()
 export class User {
@@ -8,9 +17,31 @@ export class User {
   @Column()
   name: string;
 
-  @Column()
+  @Index({ unique: true })
+  @Column({
+    unique: true,
+    nullable: false,
+    transformer: [lowercase],
+  })
+  email: string;
+
+  @Column({
+    select: false,
+    nullable: false,
+  })
   password: string;
 
-  @Column()
+  @Column({
+    select: false,
+    nullable: false,
+  })
   salt: String;
+
+  @Column()
+  @CreateDateColumn()
+  createdAt: Date;
+
+  @Column()
+  @UpdateDateColumn()
+  updatedAt: Date;
 }
