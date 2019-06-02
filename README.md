@@ -16,7 +16,7 @@ src
 ```
 
 
-## ❯ Getting Started
+## Getting Started
 
 ### Step 1: Set up the Development Environment
 
