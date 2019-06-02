@@ -1,0 +1,15 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+      - PORT=8080
+      - MONGO_URL=mongodb:27017
+    ports: 
+      - "8080:8080"
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
