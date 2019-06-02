@@ -1,10 +1,10 @@
-import 'reflect-metadata';
 import * as express from 'express';
 import config from './config';
+import loaders from './loaders';
 
 async function main() {
   const app = express.default();
-  await require('./loaders').default(app);
+  await loaders(app);
 
   app.listen(config.port, (err: any) => {
     if (err) {

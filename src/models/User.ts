@@ -1,21 +1,26 @@
 import {
-  Entity,
-  ObjectIdColumn,
-  ObjectID,
   Column,
-  Index,
   CreateDateColumn,
+  Entity,
+  Index,
+  ObjectID,
+  ObjectIdColumn,
   UpdateDateColumn,
 } from 'typeorm';
 import { lowercase } from './ValueTransformers';
 
+export enum Role {
+  User = 'USER',
+  Admin = 'ADMIN',
+}
+
 @Entity()
 export class User {
   @ObjectIdColumn()
-  id: ObjectID;
+  public id: ObjectID;
 
   @Column()
-  name: string;
+  public name: string;
 
   @Index({ unique: true })
   @Column({
@@ -23,25 +28,38 @@ export class User {
     nullable: false,
     transformer: [lowercase],
   })
-  email: string;
+  public email: string;
 
   @Column({
     select: false,
     nullable: false,
   })
-  password: string;
+  public password: string;
 
   @Column({
     select: false,
     nullable: false,
   })
-  salt: String;
+  public salt: string;
+
+  @Column({ type: 'enum', enum: Role, default: Role.User })
+  public role: Role;
 
   @Column()
   @CreateDateColumn()
-  createdAt: Date;
+  public createdAt: Date;
 
   @Column()
   @UpdateDateColumn()
-  updatedAt: Date;
+  public updatedAt: Date;
+
+  // @AfterLoad()
+  // public deletePropertis(): void {
+  //   // delete this.password;
+  //   // delete this.salt;
+  //   delete this.email;
+  //   if (this.password) {
+  //     console.log(this.password);
+  //   }
+  // }
 }

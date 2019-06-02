@@ -1,7 +1,8 @@
-import { createConnection, Connection, getConnectionOptions } from 'typeorm';
-import { User } from '../models/User';
+import Container from 'typedi';
+import { Connection, createConnection, useContainer } from 'typeorm';
 import { MongoConnectionOptions } from 'typeorm/driver/mongodb/MongoConnectionOptions';
 import config from '../config';
+import { User } from '../models/User';
 
 export default async (): Promise<Connection> => {
   // read connection options from ormconfig file (or ENV variables)
@@ -17,9 +18,11 @@ export default async (): Promise<Connection> => {
     entities: [User],
   };
 
-  // do something with connectionOptions,
+  // typedi + typeorm
+  useContainer(Container);
 
   // create a connection using modified connection options
   const connection = await createConnection(connectionOptions);
+
   return connection;
 };

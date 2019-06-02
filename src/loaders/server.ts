@@ -1,15 +1,16 @@
-import * as express from 'express';
-import cors from 'cors';
-import helmet from 'helmet';
 import bodyParser from 'body-parser';
-
-import routes from '../routes';
+import { errors, isCelebrate } from 'celebrate';
+import cors from 'cors';
+import * as express from 'express';
+import helmet from 'helmet';
+import routes from '../api/routes';
 
 export default (app: express.Application) => {
   app.enable('trust proxy');
   app.use(cors());
   app.use(helmet());
   app.use(bodyParser.json());
+  app.use(errors());
 
   app.use('/api', routes);
 
@@ -29,6 +30,16 @@ export default (app: express.Application) => {
       return res
         .status(err.status)
         .send({ message: err.message })
+        .end();
+    }
+
+    /**
+     * Handle validation error thrown by Celebrate + Joi
+     */
+    if (isCelebrate(err)) {
+      return res
+        .status(422)
+        .send({ error: err.joi.details })
         .end();
     }
     return next(err);

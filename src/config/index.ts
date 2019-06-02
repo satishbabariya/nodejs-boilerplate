@@ -15,6 +15,11 @@ export default {
   port: process.env.PORT,
 
   /**
+   * JWT Secret
+   */
+  jwtSecret: process.env.JWT_SECRET,
+
+  /**
    * MongoDB connection options.
    */
   database: {
@@ -30,6 +35,7 @@ export default {
     /**
      * Database host port.
      */
+    // tslint:disable-next-line: radix
     port: Number.parseInt(process.env.TYPEORM_PORT),
     /**
      * Database username.
