@@ -1,6 +1,20 @@
 # nodejs-boilerplate
 Clean Architecture for node.js projects
 
+## Folder Structure 
+
+```
+src
+│   main.ts         # Application entry point
+└───api             # Express route controllers for all the endpoints of the app
+└───config          # Environment variables and configurations
+└───loaders         # Split the startup process into modules
+└───models          # TypeORM Entities
+└───services        # All the business logic is here
+└───types           # Type declaration files (d.ts) for Typescript
+
+```
+
 
 ## ❯ Getting Started
 
@@ -28,4 +42,4 @@ Install [Node.js and NPM](https://nodejs.org/en/download/)
 - the builded app located in `dist`.
 
 
-Inspired by Bulletproof Node.js architecture
+Inspired by Bulletproof Node.js architecture with modificatins
