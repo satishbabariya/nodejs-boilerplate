@@ -24,7 +24,7 @@ export default app => {
           .required(),
         email: Joi.string()
           .trim()
-          .email({ minDomainAtoms: 2 })
+          .email()
           .required(),
         password: Joi.string()
           .min(8)
@@ -50,7 +50,7 @@ export default app => {
       body: Joi.object({
         email: Joi.string()
           .trim()
-          .email({ minDomainAtoms: 2 })
+          .email()
           .required(),
         password: Joi.string()
           .min(8)
