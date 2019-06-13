@@ -996,10 +996,10 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-celebrate@10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-10.0.0.tgz#488312d721e3f16f892fe121fd87369b460ae423"
-  integrity sha512-XjTz3Y5ayN8iRH/10JJYPGQbRm7Tod52vOdz7+vAgAPVgHN70NF2UlT4xBR+79jKyWbZfh3mkwyfNGkeklsLuQ==
+celebrate@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-10.0.1.tgz#dc95136ba12c061d718dd614ec3910e4ab52136e"
+  integrity sha512-Eke/caDOlcLjwk8WN4+bX9WyiiIgJ+zjbsh368FAtEj74bNC3Y+gVfFF8efmP9iYVnFSkLy31+6bKCQm/Zza+g==
   dependencies:
     "@hapi/joi" "15.x.x"
     escape-html "1.0.3"
