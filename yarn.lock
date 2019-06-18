@@ -657,10 +657,10 @@ arg@^4.1.0:
   resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
   integrity sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
 
-argon2@0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/argon2/-/argon2-0.23.0.tgz#0b3cd77ed1501b2ebef23462d91cf114dfee5562"
-  integrity sha512-+CC/bLeHF3c1JmTgmeuVSCsNc/hk2yFPYdxvfX37G6VHgZAZ0gMezPI/qsYUy4YXGya8dGBUEu85itYtf8eIQQ==
+argon2@0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/argon2/-/argon2-0.24.0.tgz#60a7d7e7ce2a0a3b93d4455446153546f01ca3aa"
+  integrity sha512-796movQU1LIW4egM+FH2mrgaTBtIhjEvuTx3sfw0W+Ijbk29IvKOh/i1IDAKCS9s6Y+2GdlPVU5q/gQZ3lyp5w==
   dependencies:
     "@phc/format" "^0.5.0"
     node-addon-api "^1.6.3"
