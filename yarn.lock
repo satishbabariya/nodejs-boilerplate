@@ -318,10 +318,10 @@
   dependencies:
     safe-buffer "^5.1.2"
 
-"@types/agenda@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-2.0.4.tgz#94f43a9b6022fde8a87209bad2475a90029a42ca"
-  integrity sha512-iOAt0JjmfD0APkGSfIjh/wD909kUW6WDhB5irGIIqHYih4znbiHtgCzXHKi219QFVdF6KeNhVA7N1yTd9a0CtA==
+"@types/agenda@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-2.0.5.tgz#30fee7b3139262cfe90917e9e15d32147d520680"
+  integrity sha512-2loWrgsW675/bappNGZwLeuXSPaF7b3ZxXsqFz6zmA1sY31Y8De5XZM5377EQf7VgLPRXVN6jx/V9jAYk9953A==
   dependencies:
     "@types/mongodb" "*"
     "@types/node" "*"
