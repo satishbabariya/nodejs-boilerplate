@@ -54,7 +54,7 @@
     "nodemon": "1.19.1",
     "prettier": "^1.18.2",
     "ts-jest": "24.0.2",
-    "ts-node": "8.3.0",
+    "ts-node": "8.5.0",
     "tslint": "5.20.0",
     "typescript": "^3.5.3"
   }
