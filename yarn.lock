@@ -1038,13 +1038,14 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-celebrate@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-10.0.1.tgz#dc95136ba12c061d718dd614ec3910e4ab52136e"
-  integrity sha512-Eke/caDOlcLjwk8WN4+bX9WyiiIgJ+zjbsh368FAtEj74bNC3Y+gVfFF8efmP9iYVnFSkLy31+6bKCQm/Zza+g==
+celebrate@10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-10.1.0.tgz#a197551cddc5896d77765989096cee4fa33cc797"
+  integrity sha512-Ybkb+/mek6nl4HZljFGUtma8r1Dq0ClYiHf5RVV3msoDFRsJlAFIR8J6+dKwL4EhgihIPFdBOMc6KFO9izMA9g==
   dependencies:
     "@hapi/joi" "15.x.x"
     escape-html "1.0.3"
+    lodash.get "4.4.x"
 
 chalk@^1.1.1:
   version "1.1.3"
@@ -3134,6 +3135,11 @@ locate-path@^3.0.0:
   dependencies:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
+
+lodash.get@4.4.x:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
 lodash.includes@^4.3.0:
   version "4.3.0"
