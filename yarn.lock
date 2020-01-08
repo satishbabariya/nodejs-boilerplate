@@ -139,31 +139,43 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@hapi/address@2.x.x":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
-  integrity sha512-mV6T0IYqb0xL1UALPFplXYQmR0twnXG0M6jUswpquqT2sD12BOiCiLy3EvMp/Fy7s3DZElC4/aPjEjo2jeZpvw==
+"@hapi/address@^2.1.2":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
+  integrity sha512-QD1PhQk+s31P1ixsX0H0Suoupp3VMXzIVMSwobR3F3MSUO2YCV0B7xqLcUw/Bh8yuvd3LhpyqLQWTNcRmp6IdQ==
 
-"@hapi/hoek@6.x.x":
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-6.2.3.tgz#0abff7ac75d0c5388d2829c464b2aff74d473721"
-  integrity sha512-CtV9cp35+6Sfh6OfB+AYBozNIorZ6npNJjfO8InIyh/iFQI7uBW9bIApYoYf6TWq9w9BArecw2DDJf7oK+VlRw==
+"@hapi/formula@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@hapi/formula/-/formula-1.2.0.tgz#994649c7fea1a90b91a0a1e6d983523f680e10cd"
+  integrity sha512-UFbtbGPjstz0eWHb+ga/GM3Z9EzqKXFWIbSOFURU0A/Gku0Bky4bCk9/h//K2Xr3IrCfjFNhMm4jyZ5dbCewGA==
 
-"@hapi/joi@15.x.x":
-  version "15.0.3"
-  resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-15.0.3.tgz#e94568fd859e5e945126d5675e7dd218484638a7"
-  integrity sha512-z6CesJ2YBwgVCi+ci8SI8zixoj8bGFn/vZb9MBPbSyoxsS2PnWYjHcyTM17VLK6tx64YVK38SDIh10hJypB+ig==
+"@hapi/hoek@^8.2.4", "@hapi/hoek@^8.3.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.0.tgz#2f9ce301c8898e1c3248b0a8564696b24d1a9a5a"
+  integrity sha512-7XYT10CZfPsH7j9F1Jmg1+d0ezOux2oM2GfArAzLwWe4mE2Dr3hVjsAL6+TFY49RRJlCdJDMw3nJsLFroTc8Kw==
+
+"@hapi/joi@16.x.x":
+  version "16.1.8"
+  resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-16.1.8.tgz#84c1f126269489871ad4e2decc786e0adef06839"
+  integrity sha512-wAsVvTPe+FwSrsAurNt5vkg3zo+TblvC5Bb1zMVK6SJzZqw9UrJnexxR+76cpePmtUZKHAPxcQ2Bf7oVHyahhg==
   dependencies:
-    "@hapi/address" "2.x.x"
-    "@hapi/hoek" "6.x.x"
-    "@hapi/topo" "3.x.x"
+    "@hapi/address" "^2.1.2"
+    "@hapi/formula" "^1.2.0"
+    "@hapi/hoek" "^8.2.4"
+    "@hapi/pinpoint" "^1.0.2"
+    "@hapi/topo" "^3.1.3"
 
-"@hapi/topo@3.x.x":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-3.1.0.tgz#5c47cd9637c2953db185aa957a27bcb2a8b7a6f8"
-  integrity sha512-gZDI/eXOIk8kP2PkUKjWu9RW8GGVd2Hkgjxyr/S7Z+JF+0mr7bAlbw+DkTRxnD580o8Kqxlnba9wvqp5aOHBww==
+"@hapi/pinpoint@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hapi/pinpoint/-/pinpoint-1.0.2.tgz#025b7a36dbbf4d35bf1acd071c26b20ef41e0d13"
+  integrity sha512-dtXC/WkZBfC5vxscazuiJ6iq4j9oNx1SHknmIr8hofarpKUZKmlUVYVIhNVzIEgK5Wrc4GMHL5lZtt1uS2flmQ==
+
+"@hapi/topo@^3.1.3":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-3.1.6.tgz#68d935fa3eae7fdd5ab0d7f953f3205d8b2bfc29"
+  integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
-    "@hapi/hoek" "6.x.x"
+    "@hapi/hoek" "^8.3.0"
 
 "@jest/console@^24.7.1":
   version "24.7.1"
@@ -1038,12 +1050,12 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-celebrate@10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-10.0.1.tgz#dc95136ba12c061d718dd614ec3910e4ab52136e"
-  integrity sha512-Eke/caDOlcLjwk8WN4+bX9WyiiIgJ+zjbsh368FAtEj74bNC3Y+gVfFF8efmP9iYVnFSkLy31+6bKCQm/Zza+g==
+celebrate@11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-11.0.1.tgz#237e60388a6563be4f027862a32821b35e211ad7"
+  integrity sha512-oZ8A7n3UElnwfi9PZqw89lYp59wUVh8CKtUb5LuZkwXUkTrQhQiKxiyJU2Srpu/QfMPUhvO+xeNwUvC8eaxbDA==
   dependencies:
-    "@hapi/joi" "15.x.x"
+    "@hapi/joi" "16.x.x"
     escape-html "1.0.3"
 
 chalk@^1.1.1:
