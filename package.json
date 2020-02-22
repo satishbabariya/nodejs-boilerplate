@@ -53,7 +53,7 @@
     "jest": "24.9.0",
     "nodemon": "2.0.1",
     "prettier": "^1.19.1",
-    "ts-jest": "24.2.0",
+    "ts-jest": "24.3.0",
     "ts-node": "8.5.4",
     "tslint": "6.0.0",
     "typescript": "^3.8.2"
