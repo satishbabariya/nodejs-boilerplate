@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "agenda": "^3.0.0",
-    "argon2": "0.26.0",
+    "argon2": "0.26.2",
     "body-parser": "1.19.0",
     "celebrate": "11.0.1",
     "cors": "2.8.5",
