@@ -36,7 +36,7 @@
     "mongodb": "3.5.7",
     "reflect-metadata": "0.1.13",
     "typedi": "0.8.0",
-    "typeorm": "0.2.22",
+    "typeorm": "0.2.24",
     "typeorm-typedi-extensions": "0.2.3"
   },
   "devDependencies": {
