@@ -1,5 +1,9 @@
 name: Main workflow
-on: [push]
+
+on:
+  push:      
+    tags:
+      - v*
 jobs:
   run:
     name: Run
