@@ -634,10 +634,10 @@
   dependencies:
     type-detect "4.0.8"
 
-"@types/agenda@2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-2.0.6.tgz#56e81fcd6dc633e5599b6dac527274d51b3a717a"
-  integrity sha512-Dg+vuMsvF5hldxtdhSpH63uSdjJfkOkg4fVSyndveX6sMfqAe4hbq3rN4rPhFHirxHZGTj6quoQrs9DUln1lyw==
+"@types/agenda@2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-2.0.7.tgz#6e7977d2e852d3bca102e2dd4a4d20b6f1a563e3"
+  integrity sha512-a/NMzy5Akhect+t2LD4nYUeNv44/U4Ay67uHMwQ89WWaQ/23gAEKf2hibwSkkTAsM/yr05R2cgqb84oN0O0rQw==
   dependencies:
     "@types/mongodb" "*"
     "@types/node" "*"
