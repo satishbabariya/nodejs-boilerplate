@@ -1,9 +1,9 @@
 name: Main workflow
 
 on:
-  push:      
-    tags:
-      - v*
+  push:    
+    branches: master
+    
 jobs:
   run:
     name: Run
