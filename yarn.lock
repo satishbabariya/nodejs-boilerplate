@@ -664,6 +664,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/hapi__joi@17.x.x":
+  version "17.1.4"
+  resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-17.1.4.tgz#e46cd1bd81d25cd45247d652dadb3666514d807c"
+  integrity sha512-gqY3TeTyZvnyNhM02HgyCIoGIWsTFMnuzMfnD8evTsr1KIfueGJaz+QC77j+dFvhZ5cJArUNjDRHUjPxNohzGA==
+
 "@types/helmet@0.0.47":
   version "0.0.47"
   resolved "https://registry.yarnpkg.com/@types/helmet/-/helmet-0.0.47.tgz#ec5161541b649142205b7c558bca14801c5ce129"
@@ -1293,12 +1298,13 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-celebrate@12.1.1:
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-12.1.1.tgz#73e4ef27ff44b3a6a68b5d779e6a801139a5ff15"
-  integrity sha512-d6A0KRX3sbGCbB/id6D4FAqGHwRfFb1B2e77pberUFF1awsF3P9RsLeeRYwbsrgA6Zj7J01SA07NgUyR6BeJVQ==
+celebrate@12.1.2:
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-12.1.2.tgz#1adf4ae2a2d6224fabc1d6779fa0fdd9632c047e"
+  integrity sha512-/Ajqg6lUBQxYHznFzLvF0Mk6AoMmFFoyIEJRje1ndkOEfhWTJmcZ9ocL9QNcoMpb+LBhFfPCTIMr/k+tsiHTDA==
   dependencies:
     "@hapi/joi" "17.x.x"
+    "@types/hapi__joi" "17.x.x"
     escape-html "1.0.3"
 
 chalk@^1.1.1:
