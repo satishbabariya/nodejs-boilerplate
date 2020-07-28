@@ -1,3 +1,5 @@
+try! [resty.js](https://github.com/restyjs/resty), my newest node.js + express based framework. with controllers and middlewares built in.
+
 # nodejs-boilerplate
 Clean Architecture for node.js projects
 
