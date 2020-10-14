@@ -10,7 +10,7 @@ import UserService from '../../services/users';
 const attachCurrentUser = async (req, res, next) => {
   try {
     const userServiceInstance = Container.get(UserService);
-    const userRecord = userServiceInstance.findOne(req.token.id);
+    const userRecord = await userServiceInstance.findOne(req.token.id);
     if (!userRecord) {
       return res.sendStatus(401);
     }
