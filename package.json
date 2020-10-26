@@ -16,7 +16,7 @@
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test:cov": "rm -rf ./node_modules/.cache && rm -rf coverage/ && jest --coverage --passWithNoTests"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -57,5 +57,13 @@
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
     "typescript": "3.9.6"
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "tests"
+    ],
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node"
   }
 }
