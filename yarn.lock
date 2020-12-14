@@ -546,10 +546,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/agenda@2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-2.0.9.tgz#bc7354aeee064bfe6145e4804e450c9b04345526"
-  integrity sha512-uSQmxC9/OWvXCprY5+xzDUt95NCAffijeODNM4qscWnl9TGXIxyeA59MKF1Wq0OUPpURiWylVuNGUzBku1KrIA==
+"@types/agenda@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/agenda/-/agenda-3.0.0.tgz#70c726b65b96c893bc2e3fc3210d62e296be2941"
+  integrity sha512-pSozlUBvUoLwIcJEBezH+yxrjQp99SCZLyRqPygOsQy7oEw0sE288AOQLCjiz5Hb76/yY+9yGDnVfHxKBMuxAw==
   dependencies:
     "@types/mongodb" "*"
     "@types/node" "*"
