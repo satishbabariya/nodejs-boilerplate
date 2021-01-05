@@ -40,7 +40,7 @@
     "typeorm-typedi-extensions": "0.2.3"
   },
   "devDependencies": {
-    "@types/agenda": "2.0.9",
+    "@types/agenda": "3.0.2",
     "@types/cors": "2.8.9",
     "@types/dotenv": "8.2.0",
     "@types/express": "4.17.7",
