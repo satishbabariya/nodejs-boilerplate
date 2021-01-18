@@ -30,7 +30,7 @@
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "express-jwt": "6.0.0",
-    "helmet": "4.2.0",
+    "helmet": "4.4.0",
     "joi": "^17.3.0",
     "jsonwebtoken": "8.5.1",
     "mongodb": "3.6.3",
