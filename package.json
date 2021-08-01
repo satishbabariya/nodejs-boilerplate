@@ -35,7 +35,7 @@
     "jsonwebtoken": "8.5.1",
     "mongodb": "3.6.3",
     "reflect-metadata": "0.1.13",
-    "typedi": "0.8.0",
+    "typedi": "0.10.0",
     "typeorm": "0.2.35",
     "typeorm-typedi-extensions": "0.2.3"
   },
