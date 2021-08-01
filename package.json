@@ -48,7 +48,7 @@
     "@types/helmet": "4.0.0",
     "@types/jest": "26.0.23",
     "@types/joi": "14.3.4",
-    "@types/morgan": "1.9.2",
+    "@types/morgan": "1.9.3",
     "@types/node": "15.0.2",
     "jest": "26.6.3",
     "nodemon": "2.0.12",
