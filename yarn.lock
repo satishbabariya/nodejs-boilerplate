@@ -5252,10 +5252,10 @@ typeorm-typedi-extensions@0.2.3:
   resolved "https://registry.yarnpkg.com/typeorm-typedi-extensions/-/typeorm-typedi-extensions-0.2.3.tgz#94fca2656206d771bf6d2242f5aab570511188e8"
   integrity sha512-T9i1NvRZNjPn9Jb8oT772ihfn6PwdqDVpzPCtKSqjkZGOgXrCkdyD3dDrzfMaoWJ1afU58bVx2CMb95FzT42Ow==
 
-typeorm@0.2.35:
-  version "0.2.35"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.35.tgz#bf6a8cda6e287af8fa662a490c4457e69a3b1752"
-  integrity sha512-vj4U8K1rlBW3N/3AkuEnjdawYp+yo3uw0OWK+5/E5tFuaofV9x3zWtLYKQngsEAZ7l/lLsN5fbz7MtBnwSPe8A==
+typeorm@0.2.36:
+  version "0.2.36"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.36.tgz#02295462438b4f1279d26d15d32823c522ae1a04"
+  integrity sha512-l4knslldEqKi5EavopnQASnt2V+kLby3SQaww34tXq//ckfUqq/GCU4eMcLhVBQl9OXCxoWOVEDwklBqk+Q+KQ==
   dependencies:
     "@sqltools/formatter" "^1.2.2"
     app-root-path "^3.0.0"
@@ -5272,7 +5272,7 @@ typeorm@0.2.35:
     tslib "^2.1.0"
     xml2js "^0.4.23"
     yargonaut "^1.1.4"
-    yargs "^16.2.0"
+    yargs "^17.0.1"
     zen-observable-ts "^1.0.0"
 
 typescript@4.2.4:
@@ -5635,10 +5635,23 @@ yargs@^15.4.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^16.0.0, yargs@^16.2.0:
+yargs@^16.0.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
   integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.5"
+    yargs-parser "^20.2.2"
+
+yargs@^17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.0.1.tgz#6a1ced4ed5ee0b388010ba9fd67af83b9362e0bb"
+  integrity sha512-xBBulfCc8Y6gLFcrPvtqKz9hz8SO0l1Ni8GgDekvBX2ro0HRQImDGnikfc33cgzcYUSncapnNcZDjVFIH3f6KQ==
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
