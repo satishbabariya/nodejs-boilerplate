@@ -12,9 +12,9 @@ export default async (): Promise<Connection> => {
     host: config.database.host,
     port: config.database.port,
     database: config.database.database,
-    synchronize: true,
+    synchronize: false,
     logging: true,
-    useNewUrlParser: true,
+    // useNewUrlParser: true,
     entities: [User],
   };
 

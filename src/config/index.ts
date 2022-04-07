@@ -12,7 +12,7 @@ export default {
   /**
    *  Application port.
    */
-  port: process.env.PORT,
+  port: parseInt(process.env.PORT) || 3000,
 
   /**
    * JWT Secret

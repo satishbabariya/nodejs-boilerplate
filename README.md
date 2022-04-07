@@ -1,9 +1,10 @@
 try! [resty.js](https://github.com/restyjs/resty), my newest node.js + express based framework. with controllers and middlewares built in.
 
 # nodejs-boilerplate
+
 Clean Architecture for node.js projects
 
-## Folder Structure 
+## Folder Structure
 
 ```
 src
@@ -16,7 +17,6 @@ src
 └───types           # Type declaration files (d.ts) for Typescript
 
 ```
-
 
 ## Getting Started
 
@@ -35,13 +35,12 @@ Install [Node.js and NPM](https://nodejs.org/en/download/)
 
 ### Running in dev mode
 
-- Run `yarn start` 
+- Run `yarn start`
 - The server address will be displayed to you as `http://0.0.0.0:3000`
 
 ### Building the project and run it
 
 - Run `yarn build` to generated all JavaScript files from the TypeScript sources.
 - the builded app located in `dist`.
-
 
 Inspired by Bulletproof Node.js architecture with modificatins

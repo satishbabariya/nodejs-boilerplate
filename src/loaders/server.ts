@@ -1,5 +1,5 @@
 import bodyParser from 'body-parser';
-import { errors, isCelebrate } from 'celebrate';
+import { errors, celebrate, isCelebrateError } from 'celebrate';
 import cors from 'cors';
 import * as express from 'express';
 import helmet from 'helmet';
@@ -27,20 +27,14 @@ export default (app: express.Application) => {
      * Handle 401 thrown by express-jwt library
      */
     if (err.name === 'UnauthorizedError') {
-      return res
-        .status(err.status)
-        .send({ message: err.message })
-        .end();
+      return res.status(err.status).send({ message: err.message }).end();
     }
 
     /**
      * Handle validation error thrown by Celebrate + Joi
      */
-    if (isCelebrate(err)) {
-      return res
-        .status(422)
-        .send({ error: err.joi.details })
-        .end();
+    if (isCelebrateError(err)) {
+      return res.status(422).send({ message: err.message, details: err.details }).end();
     }
     return next(err);
   });
