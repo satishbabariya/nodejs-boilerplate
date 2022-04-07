@@ -54,7 +54,7 @@ export default class AuthService {
   }
 
   public async SignIn(email: string, password: string): Promise<{ user: User; token: string }> {
-    const record = await this.userRepository.findOne({ email });
+    const record = await this.userRepository.findOne({ where: { email } });
 
     if (!record) {
       throw new Exception('User not found!', 404);

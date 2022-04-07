@@ -9,3 +9,5 @@ appveyor.yml
 icon.png
 LICENSE
 README.md
+build
+dist
