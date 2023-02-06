@@ -44,7 +44,7 @@
     "@types/express-jwt": "^6.0.4",
     "@types/jest": "^27.5.0",
     "@types/morgan": "^1.9.3",
-    "@types/node": "^18.7.23",
+    "@types/node": "^18.11.19",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
