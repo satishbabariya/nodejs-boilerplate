@@ -46,7 +46,7 @@
     "@types/morgan": "^1.9.3",
     "@types/node": "^18.7.23",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15",
+    "nodemon": "^3.0.1",
     "prettier": "^2.6.2",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
