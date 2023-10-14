@@ -1,5 +1,5 @@
 import { Service } from 'typedi';
-import { FindOneOptions, ObjectID, Repository } from 'typeorm';
+import { FindOneOptions, Repository } from 'typeorm';
 import { InjectRepository } from 'typeorm-typedi-extensions';
 import { User } from '../models/User';
 

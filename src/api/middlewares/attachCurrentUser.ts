@@ -10,7 +10,7 @@ import UserService from '../../services/users';
 const attachCurrentUser = async (req, res, next) => {
   try {
     const userServiceInstance = Container.get(UserService);
-    const userRecord = await userServiceInstance.findOne(req.token.id);
+    const userRecord = await userServiceInstance.findOne(req.auth.id);
     if (!userRecord) {
       return res.sendStatus(401);
     }
@@ -18,7 +18,7 @@ const attachCurrentUser = async (req, res, next) => {
     Reflect.deleteProperty(currentUser, 'password');
     Reflect.deleteProperty(currentUser, 'salt');
     req.currentUser = currentUser;
-    req.currentUser.os = req.token.os;
+    req.currentUser.os = req.auth.os;
     return next();
   } catch (e) {
     console.log(' Error attaching user to req');

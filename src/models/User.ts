@@ -3,7 +3,7 @@ import {
   CreateDateColumn,
   Entity,
   Index,
-  ObjectID,
+  ObjectId,
   ObjectIdColumn,
   UpdateDateColumn,
 } from 'typeorm';
@@ -17,7 +17,7 @@ export enum Role {
 @Entity()
 export class User {
   @ObjectIdColumn()
-  public id: ObjectID;
+  public id: ObjectId;
 
   @Column()
   public name: string;
