@@ -2055,10 +2055,10 @@ caniuse-lite@^1.0.30001541:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001549.tgz#7d1a3dce7ea78c06ed72c32c2743ea364b3615aa"
   integrity sha512-qRp48dPYSCYaP+KurZLhDYdVE+yEyht/3NlmcJgVQ2VMGt6JL36ndQ/7rgspdZsJuxDPFIo/OzBT2+GmIJ53BA==
 
-celebrate@^15.0.1:
-  version "15.0.1"
-  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-15.0.1.tgz#767fa6268f7446b473ea69cd6326ce4dffee4d1e"
-  integrity sha512-K2y221k10u+K2t9w25802qXh8h1mVWZf+6pl7zHdlhhwzrOSQFnnw+GsR8k17oyn4Y3fVErBGsO/+CeW8N7aRQ==
+celebrate@^15.0.3:
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/celebrate/-/celebrate-15.0.3.tgz#3eff7fb5bacc06dd28f543f5e2b5dc6ed2306cf8"
+  integrity sha512-ToF8ILq/F0KhQ0CPtexP7Cu9GkqKJ91VKy3ZOCV24aaNWdm3QCHqnXAKfKHrtcM2B2zmPFe11p8WWsQkmq8k4g==
   dependencies:
     escape-html "1.0.3"
     joi "17.x.x"
