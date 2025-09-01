@@ -1,6 +1,6 @@
-import * as argon2 from 'argon2';
+import argon2 from 'argon2';
 import { randomBytes } from 'crypto';
-import * as jwt from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { Service } from 'typedi';
 import { Repository } from 'typeorm';
 import { InjectRepository } from 'typeorm-typedi-extensions';
@@ -43,12 +43,12 @@ export default class AuthService {
       Reflect.deleteProperty(user, 'password');
       Reflect.deleteProperty(user, 'salt');
       return { user, token };
-    } catch (error) {
+    } catch (error: any) {
       if (error.name === 'MongoError' && error.code === 11000) {
         // Duplicate username
         throw new Error('User already exist!');
       }
-      console.log(error);
+      console.error(error);
       throw error;
     }
   }

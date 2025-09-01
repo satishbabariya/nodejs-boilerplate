@@ -11,7 +11,7 @@ export default class UserService {
     return await this.userRepository.find();
   }
 
-  public async findOne(options: FindOneOptions<User>): Promise<User> {
+  public async findOne(options: FindOneOptions<User>): Promise<User | null> {
     return await this.userRepository.findOne(options);
   }
 }

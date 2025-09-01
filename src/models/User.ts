@@ -17,10 +17,10 @@ export enum Role {
 @Entity()
 export class User {
   @ObjectIdColumn()
-  public id: ObjectId;
+  public id!: ObjectId;
 
   @Column()
-  public name: string;
+  public name!: string;
 
   @Index({ unique: true })
   @Column({
@@ -28,30 +28,30 @@ export class User {
     nullable: false,
     transformer: [lowercase],
   })
-  public email: string;
+  public email!: string;
 
   @Column({
     select: false,
     nullable: false,
   })
-  public password: string;
+  public password!: string;
 
   @Column({
     select: false,
     nullable: false,
   })
-  public salt: string;
+  public salt!: string;
 
   @Column({ type: 'enum', enum: Role, default: Role.User })
-  public role: Role;
+  public role!: Role;
 
   @Column()
   @CreateDateColumn()
-  public createdAt: Date;
+  public createdAt!: Date;
 
   @Column()
   @UpdateDateColumn()
-  public updatedAt: Date;
+  public updatedAt!: Date;
 
   // @AfterLoad()
   // public deletePropertis(): void {

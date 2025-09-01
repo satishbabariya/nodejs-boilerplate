@@ -1,4 +1,4 @@
-import {expressjwt as jwt} from 'express-jwt';
+import { expressjwt as jwt } from 'express-jwt';
 import config from '../../config';
 
 /**
@@ -7,7 +7,7 @@ import config from '../../config';
  * Authorization: Bearer ${JWT}
  *
  */
-const getTokenFromHeader = (req) => {
+const getTokenFromHeader = (req: any) => {
   const { authorization } = req.headers;
   if (
     (authorization && authorization.split(' ')[0] === 'Token') ||
@@ -15,13 +15,13 @@ const getTokenFromHeader = (req) => {
   ) {
     return authorization.split(' ')[1];
   }
-  // tslint:disable-next-line: no-null-keyword
+  // eslint-disable-next-line @typescript-eslint/no-null-keyword
   return null;
 };
 
 const isAuth = jwt({
   algorithms: ['HS256'], // This is the default algorithm used by jsonwebtoken
-  secret: config.jwtSecret, // The _secret_ to sign the JWTs
+  secret: config.jwtSecret || 'default-secret-key', // The _secret_ to sign the JWTs
   getToken: getTokenFromHeader, // How to extract the JWT from the request
 });
 

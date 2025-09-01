@@ -7,7 +7,7 @@ import UserService from '../../services/users';
  * @param {*} res  Express res Object
  * @param {*} next  Express next Function
  */
-const attachCurrentUser = async (req, res, next) => {
+const attachCurrentUser = async (req: any, res: any, next: any) => {
   try {
     const userServiceInstance = Container.get(UserService);
     const userRecord = await userServiceInstance.findOne(req.auth.id);

@@ -1,9 +1,9 @@
-import * as dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 const envFound = dotenv.config();
-if (!envFound) {
+if (envFound.error) {
   // Throw generic error
   throw new Error("Couldn't find .env file");
 }
@@ -12,12 +12,12 @@ export default {
   /**
    *  Application port.
    */
-  port: parseInt(process.env.PORT) || 3000,
+  port: parseInt(process.env.PORT || '3000'),
 
   /**
    * JWT Secret
    */
-  jwtSecret: process.env.JWT_SECRET,
+  jwtSecret: process.env.JWT_SECRET || 'default-secret-key',
 
   /**
    * MongoDB connection options.
@@ -35,8 +35,8 @@ export default {
     /**
      * Database host port.
      */
-    // tslint:disable-next-line: radix
-    port: Number.parseInt(process.env.TYPEORM_PORT),
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    port: Number.parseInt(process.env.TYPEORM_PORT!),
     /**
      * Database username.
      */
