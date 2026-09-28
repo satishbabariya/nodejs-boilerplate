@@ -1,9 +1,9 @@
-import * as express from 'express';
+import express from 'express';
 import config from './config';
 import loaders from './loaders';
 
 async function main() {
-  const app = express.default();
+  const app = express();
   await loaders(app);
 
   app.listen(config.port, () => {

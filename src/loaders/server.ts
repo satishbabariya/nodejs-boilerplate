@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
-import { errors, celebrate, isCelebrateError } from 'celebrate';
+import { errors, isCelebrateError } from 'celebrate';
 import cors from 'cors';
-import * as express from 'express';
+import express from 'express';
 import helmet from 'helmet';
 import routes from '../api/routes';
 
@@ -16,13 +16,13 @@ export default (app: express.Application) => {
 
   /// catch 404 and forward to error handler
   app.use((req, res, next) => {
-    const error: Error = new Error('Not Found');
-    error['status'] = 404;
+    const error: any = new Error('Not Found');
+    error.status = 404;
     next(error);
   });
 
   /// error handlers
-  app.use((err, req, res, next) => {
+  app.use((err: any, req: any, res: any, next: any) => {
     /**
      * Handle 401 thrown by express-jwt library
      */
@@ -39,7 +39,7 @@ export default (app: express.Application) => {
     return next(err);
   });
 
-  app.use((err, req, res, next) => {
+  app.use((err: any, req: any, res: any, _next: any) => {
     res.status(err.status || 500);
     res.json({
       errors: {

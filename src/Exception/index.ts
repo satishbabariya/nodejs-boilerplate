@@ -1,10 +1,3 @@
-interface ExtendedErrorInterface {
-  name: string;
-  message: string;
-  code: string;
-  status: number;
-}
-
 /**
  * Exception to extend the error class to allow additional properties.
  *
@@ -16,7 +9,9 @@ interface ExtendedErrorInterface {
  * 3. code - Unique error code
  * 4. link - Know more link
  */
-class Exception extends Error {
+export class Exception extends Error {
+  public status!: number;
+  public code?: string;
   constructor(message: string, status: number = 500, code?: string, link?: string) {
     super(message);
 
@@ -74,7 +69,7 @@ class Exception extends Error {
     /**
      * Update the stack trace
      */
-    if (Error.hasOwnProperty('captureStackTrace')) {
+    if (Object.prototype.hasOwnProperty.call(Error, 'captureStackTrace')) {
       Error.captureStackTrace(this, this.constructor);
       return;
     }
@@ -87,6 +82,3 @@ class Exception extends Error {
     });
   }
 }
-
-interface Exception extends ExtendedErrorInterface {}
-export { Exception };

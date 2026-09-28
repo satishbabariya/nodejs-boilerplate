@@ -12,7 +12,7 @@ const route = Router();
 //   constructor(@Inject(AuthService) private authService: AuthService) {}
 // }
 
-export default (app) => {
+export default (app: any) => {
   app.use('/auth', route);
 
   route.post(
