@@ -21,7 +21,7 @@ const getTokenFromHeader = (req: any) => {
 
 const isAuth = jwt({
   algorithms: ['HS256'], // This is the default algorithm used by jsonwebtoken
-  secret: config.jwtSecret || 'default-secret-key', // The _secret_ to sign the JWTs
+  secret: config.jwtSecret, // The _secret_ to sign the JWTs
   getToken: getTokenFromHeader, // How to extract the JWT from the request
 });
 
