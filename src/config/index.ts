@@ -2,10 +2,15 @@ import dotenv from 'dotenv';
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-const envFound = dotenv.config();
-if (envFound.error) {
-  // Throw generic error
-  throw new Error("Couldn't find .env file");
+// A missing .env file is fine (e.g. in containers where variables are
+// injected directly into the environment); only a required variable being
+// unset should fail startup.
+dotenv.config();
+
+if (!process.env.JWT_SECRET) {
+  throw new Error(
+    'JWT_SECRET environment variable is required but was not set. Set it in your environment or in a .env file (see .env.example).',
+  );
 }
 
 export default {
@@ -17,7 +22,7 @@ export default {
   /**
    * JWT Secret
    */
-  jwtSecret: process.env.JWT_SECRET || 'default-secret-key',
+  jwtSecret: process.env.JWT_SECRET,
 
   /**
    * MongoDB connection options.
